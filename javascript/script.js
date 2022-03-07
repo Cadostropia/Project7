@@ -19,6 +19,7 @@
 // .then(data => console.log(data));
 
 // changeText()
+const fileName='/json/data.json';
 
 fetch(fileName)
 .then(recieve => recieve.json())
