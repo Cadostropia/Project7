@@ -14,8 +14,7 @@ const fileName = '/json/data.json';
 fetch(fileName)
 .then(recieve => recieve.json())
 .then(data => SortBy(data));
-
-function submitData(variable){
+function dataColletor(){
     let nameD, surnameD, idD, passwordD = "";
     let array ;
     nameD = document.getElementById("name").innerHTML;
@@ -28,9 +27,16 @@ function submitData(variable){
         "id": `${surnameD}`,
         "password": `${surnameD}`
     };
-    let formData = new formData();
-    formData.append("array", array);
-    fetch('/json/data.json',{ method: "post", body:array})
+
+}
+
+function submitData(variable){
+    dataColletor();    
+    fetch(fileName, 
+        {
+        method: 'post',
+        body: JSON.stringify(array)})
+    .then(response => response.text());
 
 }
 // changeText()
