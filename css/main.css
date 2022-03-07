@@ -1,19 +1,19 @@
 input[type=text] {
-    width: 80%;
+    /* width: 100%;
     padding: 15px 22px;
     margin: 10px 5px;
     box-sizing: border-box;  
     border: 4px solid #8842d5;
     border-radius: 5px;  
     border: none;
-    border-bottom: 4px solid #8842d5;  
-    background-color: #8842d5;
+    border-bottom: 4px solid #8842d5;   */
+
+    /* background-color: #8842d5;
     color: white;  
     background-color: #9476f7;
-    background-image: url('search-icon.png');
     background-position: 9px 10px;
     background-repeat: no-repeat;
-    padding-left: 50px;  
+    padding-left: 50px;   */
 }
 textarea {
     width: 80%;
@@ -31,4 +31,26 @@ textarea {
     width: 100vw;
     display: flex;    
 }
-#showScreen{}
+#showScreen{
+    height: 100%;
+    width: 50%;
+    border: 1px solid white;
+    color: white;
+    font-size: 40rem;
+    padding: 1em;
+}
+#inputDiv{
+    height: 100%;
+    width: 50%;
+    border: 1px solid white;
+    display: flex;
+    flex-flow: column;
+}
+.inputCl{
+    padding: 10rem;
+    width: 50%;
+
+}
+.buttonCl{
+    padding: 10rem;
+    width: 50%;}
