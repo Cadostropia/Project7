@@ -34,23 +34,33 @@ textarea {
 #showScreen{
     height: 100%;
     width: 50%;
-    border: 1px solid white;
+    border: 5rem solid white;
+    border-radius: 0.5%;
     color: white;
     font-size: 40rem;
-    padding: 1em;
+    padding: 10rem;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+#showScreen::-webkit-scrollbar{
+    display: none;
 }
 #inputDiv{
     height: 100%;
     width: 50%;
-    border: 1px solid white;
+    border: 5rem solid white;
+    border-radius: 0.5%;
+    padding: 10rem;
     display: flex;
     flex-flow: column;
 }
 .inputCl{
     padding: 10rem;
     width: 50%;
-
+    margin-top: 4rem;
 }
 .buttonCl{
     padding: 10rem;
-    width: 50%;}
+    width: 50%;
+    margin-top: 4rem;
+}
